@@ -12,3 +12,23 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const galleryEl = document.querySelector('#gallery');
+galleryEl.style.listStyleType = 'none';
+
+const photo = images.map( image => {
+    
+  const photoEl =  `<li><img src ="${image.url}" alt="${image.alt}" ></li>`;
+    
+   return photoEl;
+
+});
+
+
+
+galleryEl.insertAdjacentHTML('afterbegin', photo.join(' '));
+
+//const galleryContainer = document.createElement("div");
+
+//galleryContainer.insertAdjacentHTML('afterbegin', galleryEl);
+//galleryContainer.appendChild(p)

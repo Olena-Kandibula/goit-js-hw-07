@@ -19,4 +19,4 @@ const items = ingredients.map(options => {
 
 ingredientsEl.append(...items);
 
-// console.log(...items)
+//  console.log(...items)
