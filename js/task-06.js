@@ -14,8 +14,7 @@ function onInputBlur(event) {
         return;
     }
 
-    input.classList.add("invalid")
-    
+    input.classList.add("invalid")    
 }
 
 
