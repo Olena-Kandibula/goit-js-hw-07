@@ -14,7 +14,7 @@ const images = [
 ];
 
 const galleryEl = document.querySelector('#gallery');
-galleryEl.style.listStyleType = 'none';
+
 
 const photo = images.map( image => {
     
