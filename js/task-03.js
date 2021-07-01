@@ -24,11 +24,5 @@ const photo = images.map( image => {
 
 });
 
+galleryEl.insertAdjacentHTML('afterbegin', photo.join(' '))
 
-
-galleryEl.insertAdjacentHTML('afterbegin', photo.join(' '));
-
-//const galleryContainer = document.createElement("div");
-
-//galleryContainer.insertAdjacentHTML('afterbegin', galleryEl);
-//galleryContainer.appendChild(p)
