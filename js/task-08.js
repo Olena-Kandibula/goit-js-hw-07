@@ -1,15 +1,15 @@
 
 const inputEl = document.querySelector('#controls').firstElementChild;
-console.log(inputEl);// куда вводим
+// console.log(inputEl);// куда вводим
 
 const clearBtnElEl = document.querySelector('#controls').lastElementChild;
-console.log(clearBtnElEl);//очистить
+// console.log(clearBtnElEl);//очистить
 
 const creatBtnElEl = clearBtnElEl.previousElementSibling;
-console.log(creatBtnElEl);//создать
+// console.log(creatBtnElEl);//создать
 
 const boxesEl = document.querySelector("#boxes");
-console.log(boxesEl);//бокс контейнер
+// console.log(boxesEl);//бокс контейнер
 
 
 
@@ -29,14 +29,11 @@ function createBoxes() {
 
         arrayBox.push(`<div 
         style="width: ${sizeDiv}px; height: ${sizeDiv}px; margin: 20px;
-        background:${color};" ></div>`)
-        
+        border: 2px dashed #000000; background:${color};" ></div>`)        
     }
 
      return boxesEl.insertAdjacentHTML("afterbegin" , arrayBox.join(" "));
 }
-
-
 
 clearBtnElEl.addEventListener("click", destroyBoxes)
 
